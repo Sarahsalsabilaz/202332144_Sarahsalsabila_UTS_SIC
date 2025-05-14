@@ -1,0 +1,133 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fce4ec;
+  color: #4a4a4a;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #f8bbd0;
+  color: #4a4a4a;
+  padding: 30px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+/* Navigasi */
+nav {
+  background-color: #f48fb1;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #4a4a4a;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #f06292;
+}
+
+/* Main Layout */
+main {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Konten Utama */
+.content {
+  flex: 3;
+  background-color: #f8bbd0;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form-container {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container form label,
+.form-container form input,
+.form-container form textarea,
+.form-container form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.form-container form input,
+.form-container form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-container form button {
+  padding: 10px;
+  background-color: #f48fb1;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.form-container form button:hover {
+  background-color: #f06292;
+}
+
+/* Sidebar */
+.sidebar {
+  flex: 1;
+  background-color: #fce4ec;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.sidebar img {
+  width: 180px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #f8bbd0;
+  color: #4a4a4a;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+}
